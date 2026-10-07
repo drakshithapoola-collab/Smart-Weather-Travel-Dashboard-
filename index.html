@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Travel Advisor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+        <nav class="navbar">
+
+            <h2>🌍 Weather Travel Advisor</h2>
+
+            <a href="#search">Search</a>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Plan Your Trip Smarter</h1>
+
+            <p>
+                Check the weather and get travel
+                recommendations for your destination.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search -->
+
+    <section id="search" class="search-section">
+
+        <h2>Search Your Destination</h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button id="searchButton">
+                Search
+            </button>
+
+        </div>
+
+        <p id="errorMessage"></p>
+
+        <p id="loading">
+            Loading weather information...
+        </p>
+
+    </section>
+
+
+    <!-- Weather -->
+
+    <section id="weatherSection"
+             class="weather-section">
+
+        <div class="weather-card">
+
+            <h2 id="cityName">
+                City
+            </h2>
+
+            <div id="weatherIcon"
+                 class="weather-icon">
+                ☀️
+            </div>
+
+            <h3 id="temperature">
+                --°C
+            </h3>
+
+            <p id="condition">
+                Weather condition
+            </p>
+
+
+            <div class="weather-details">
+
+                <div>
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">
+                        --%
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>💨</span>
+                    <p>Wind</p>
+                    <strong id="wind">
+                        -- km/h
+                    </strong>
+                </div>
+
+
+                <div>
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <strong id="feelsLike">
+                        --°C
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Travel Recommendation -->
+
+        <div class="travel-card">
+
+            <h2>✈️ Travel Recommendation</h2>
+
+            <div id="travelIcon">
+                🧳
+            </div>
+
+            <h3 id="travelTitle">
+                Waiting for weather...
+            </h3>
+
+            <p id="travelAdvice">
+                Search for a city to get
+                travel recommendations.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Forecast -->
+
+    <section class="forecast-section">
+
+        <h2>5-Day Forecast</h2>
+
+        <div id="forecastContainer"
+             class="forecast-container">
+
+            <!-- JavaScript adds forecast cards here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Weather Travel Advisor
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
